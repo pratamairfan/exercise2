@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 2 - Calculator</title>
+    <link rel="stylesheet" href="src/bulma/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/bulma/css/bulma.css">
+    <link rel="stylesheet" href="src/bulma/css/bulma-switch.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns">
+            <div id="pd" class="box mg-center m-top-8">
+                <div id="bg" class="column is-one-fifth box p-10 is-desktop is-tablet is-widescreen">
+                    <!-- header section calc -->
+                    <!-- <div class="field">
+                        <input id="switchRoundedDefault" type="checkbox" name="switchRoundedDefault" class="switch is-rounded is-default"
+                            checked="checked">
+                        <label for="switchRoundedDefault">Switch night mode</label>
+                    </div> -->
+
+                    <div id="nav" class="columns">
+                        <div class="column is-one-half">
+                            <span>
+                                <i class="fa fa-wifi"></i> Carrier
+                            </span>
+                            <span class="has-text-right" style="float: right">80%
+                                <i class="fa fa-battery"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column is-one-half">
+                            <input id="input" type="text" placeholder="0" readonly="readonly">
+                            <input id="answer" type="text" readonly="readonly">
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column is-one-half">
+                            <input type="button" class="button is-light" value="CE" onclick="clearscreen()" />
+                            <input type="button" class="button is-light" value="/" onclick="getopt('/')" />
+                            <input type="button" class="button is-light" value="x" onclick="getopt('x')" />
+                            <input type="button" class="button is-danger" value="&#8592;" onclick="backspace()" />
+
+                            <br>
+                            <input type="button" class="button is-dark" value="7" onclick="getnum(7)" />
+                            <input type="button" class="button is-dark" value="8" onclick="getnum(8)" />
+                            <input type="button" class="button is-dark" value="9" onclick="getnum(9)" />
+                            <input type="button" class="button is-light" value="+" onclick="getopt('+')" />
+                            <br>
+                            <input type="button" class="button is-dark" value="4" onclick="getnum(4)" />
+                            <input type="button" class="button is-dark" value="5" onclick="getnum(5)" />
+                            <input type="button" class="button is-dark" value="6" onclick="getnum(6)" />
+                            <input type="button" class="button is-light" value="-" onclick="getopt('-')" />
+                            <br>
+
+                            <input type="button" class="button is-dark" value="1" onclick="getnum(1)" />
+                            <input type="button" class="button is-dark" value="2" onclick="getnum(2)" />
+                            <input type="button" class="button is-dark" value="3" onclick="getnum(3)" />
+                            <input type="button" class="button is-light" value="( )" onclick="bracket()" />
+                            <br>
+                            <input type="button" class="button is-light" value="+/-" onclick="getopt('+/-')" />
+                            <input type="button" class="button is-dark" value="0" onclick="getnum(0)" />
+                            <input type="button" id="hsl" class="button is-warning" value="=" onclick="compute()" />
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="bg"></div>
+    </div>
+</body>
+<script src="src/js/calc.js"></script>
+
+</html>
